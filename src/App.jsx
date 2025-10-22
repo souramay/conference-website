@@ -1,3 +1,4 @@
+import AboutPage from './components/AboutPage'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
@@ -10,6 +11,7 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="about" element={<AboutPage/>} />
         </Routes>
       </main>
 
