@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "ICCAN 2019",
+    "subtitle": "International Conference on Computing Communication and Analytics"
+  },
+  "hero": {
+    "title": "Important Dates",
+    "dates": [
+      { "date": "August 31, 2019", "event": "Submission of papers" },
+      { "date": "September 20, 2019", "event": "Acceptance Notification" },
+      { "date": "October 15, 2019", "event": "Final camera ready paper submission" },
+      { "date": "December 14-15, 2019", "event": "Date of Conference" }
+    ]
+  },
+  "marquee": {
+    "text": "Technical Agenda",
+    "href": "Technical Agenda.docx"
+  },
+  "about": {
+    "title": "About ICCAN",
+    "content": "The 2nd International Conference on Computing Analytics and Networking (ICCAN 2019) is a premier international open forum for scientists, researchers and technocrats in academia as well as in industries from different parts of the world to present, interact, and exchange the state of art of concepts, prototypes, innovative research ideas in several diversified fields..."
+  },
+  "organizedBy": {
+    "title": "Organised By",
+    "organization": "School of Computer Engineering, KIIT Deemed to be University, Bhubaneswar, Odisha, India"
+  },
+  "submission": {
+    "title": "Paper Submission",
+    "content": "Authors are invited to submit full papers for consideration (maximum 10 pages) in ICCAN 2019. Submission of paper must be original and should not have been previously published... The proceedings of the conference will expected to be published by Advances in Intelligent Systems and Computing (AISC) Series, Springer."
+  }
+  
+}
