@@ -45,7 +45,7 @@ const Navbar = () => {
         path: '/archive', // Corrected spelling,
         drop: true,
         children: [
-            { name: 'ICCAN 2017', path: '/archive/2017' },
+            { name: 'ICCAN 2017', path: 'https://link.springer.com/book/10.1007/978-981-10-7871-2' },
         ]
     },
     { name: 'Travel', path: '/travel' },
