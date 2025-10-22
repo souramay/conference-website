@@ -3,47 +3,55 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-    // We'll use the URL to determine the active link, so 'click' state is no longer needed.
+
     const { pathname } = useLocation();
 
     // Define links in an array
     const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Author', path: '/author',
-            drop: true,
-            // Add your dropdown items here
-            children: [
-                { name: 'Call for papers', path: '/registration/fees' },
-                { name: 'Submission Guidlines', path: '/registration/register' },
-                { name: 'Consent to Publish Form', path: '/registration/register' },
-                { name: 'Latex Template', path: '/registration/register' },
-                { name: 'Microsoft word Template', path: '/registration/register' },
-                { name: 'Permission Request Form', path: '/registration/register' },
-                { name: 'Registration Form', path: '/registration/register' },
-                { name: 'Publications', path: '/registration/register' },
-                { name: 'Accepted Papers', path: '/registration/register' },
-            ]},
-        { 
-            name: 'Registration', 
-            path: '/registration'
-            
-            
-        },
-        { name: 'Speakers', path: '/speakers' },
-        { name: 'Committee', 
-            path: '/commitee',
-            drop: true,
-             children: [
-                { name: 'Advisory Committee', path: '/registration/register' },
-                { name: 'Pogram Committee', path: '/registration/register' },
-                { name: 'Organizing Committee', path: '/registration/register' }
-             ]
-        },
-        { name: 'Archive', path: '/archieve',drop: true, children: [{ name: 'ICCAN 2017', path: '/registration/register' },]},
-        { name: 'Travel', path: '/travel' },
-        { name: 'About Us', path: '/about' },
-        { name: 'Contact Us', path: '/contact' },
-    ];
+    { name: 'Home', path: '/' },
+    { 
+        name: 'Author', 
+        path: '/author', 
+        drop: true,
+        children: [
+            { name: 'Call for papers', path: '/author/call-for-papers' },
+            { name: 'Submission Guidelines', path: '/author/submission-guidelines' },
+            { name: 'Consent to Publish Form', path: '/author/consent-form' },
+            { name: 'Latex Template', path: '/author/latex-template' },
+            { name: 'Microsoft word Template', path: '/author/word-template' },
+            { name: 'Permission Request Form', path: '/author/permission-form' },
+            { name: 'Registration Form', path: '/author/registration-form' },
+            { name: 'Publications', path: '/author/publications' },
+            { name: 'Accepted Papers', path: '/author/accepted-papers' },
+        ]
+    },
+    { 
+        name: 'Registration', 
+        path: '/registration'
+    },
+    { name: 'Speakers', path: '/speakers' },
+    { 
+        name: 'Committee', 
+        path: '/committee', // Corrected spelling,
+        drop: true,
+        children: [
+            { name: 'Advisory Committee', path: '/committee/advisory-committee' },
+            { name: 'Program Committee', path: '/committee/program-committee' }, 
+            { name: 'Organizing Committee', path: '/committee/organizing-committee' }
+        ]
+    },
+    { 
+        name: 'Archive', 
+        path: '/archive', // Corrected spelling,
+        drop: true,
+        children: [
+            { name: 'ICCAN 2017', path: '/archive/2017' },
+        ]
+    },
+    { name: 'Travel', path: '/travel' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Contact Us', path: '/contact' },
+];
 
     return (
         <div className="navbar bg-base-300 shadow-md fixed top-0 z-20">
